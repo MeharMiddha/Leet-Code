@@ -1,7 +1,7 @@
 class Solution {
     public static int solve(int[] days,int[] costs,int index){
         int n=days.length;
-        if(index==n) return 0;
+        if(index>=n) return 0;
         // 1 day pass
         int option1 = costs[0]+solve(days,costs,index+1);
         // 7 day pass;
