@@ -1,5 +1,5 @@
 class Solution {
-    public static int solveTab(int[] days,int[] costs,int index){
+    public static int solveTab(int[] days,int[] costs){
         int n=days.length;
         int dp[]=new int[n+1];
         Arrays.fill(dp,Integer.MAX_VALUE);
@@ -18,6 +18,6 @@ class Solution {
 
     public int mincostTickets(int[] days, int[] costs) {
         // Tabulation Approach
-        return solveTab(days,costs,0);
+        return solveTab(days,costs);
     }
 }
