@@ -1,0 +1,13 @@
+class Solution {
+    public int maxSatisfaction(int[] satisfaction) {
+        Arrays.sort(satisfaction);
+        int n=0;
+        int sum=0;
+        for(int i=satisfaction.length-1;i>=0;i--){
+            n=n+satisfaction[i];
+            if(n<0) break;
+            sum=sum+n; 
+        }
+        return sum;
+    }
+}
