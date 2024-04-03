@@ -6,6 +6,7 @@ class Solution {
         return Math.max(include,exclude);
     }
     public int maxSatisfaction(int[] satisfaction) {
+        Arrays.sort(satisfaction);
         return solve(satisfaction,0,0);
     }
 }
